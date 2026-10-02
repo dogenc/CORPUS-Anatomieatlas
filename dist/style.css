@@ -33,3 +33,4 @@ body.tour-mode .explode-control{display:none}body.tour-mode #quiz-panel{display:
 body.measure-mode #scene canvas{cursor:crosshair}
 #note{width:100%;border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit;font-size:14px;line-height:1.5;resize:vertical;color:var(--ink);background:#fbfcfc}#note:focus{outline:2px solid #5496a8;outline-offset:1px}
 @media(max-width:850px){.tour .tour-text{font-size:13px}.tour-name{font-size:16px}}
+.sex-note{background:#f4f1f7;border-left:3px solid #9b7fb5;border-radius:6px;padding:4px 14px 2px;margin:10px 0 6px}.sex-note h3{color:#6b4f86;margin-top:12px!important}.sex-note .source-link{border-bottom:0;padding-top:0}

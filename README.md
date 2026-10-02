@@ -17,7 +17,7 @@ Läuft komplett im Browser. Keine Installation, kein Konto, kein Tracking.
 
 ![Modelle](https://img.shields.io/badge/3D--Modelle-934-2f5b68?style=for-the-badge)
 ![Systeme](https://img.shields.io/badge/K%C3%B6rpersysteme-13-2f5b68?style=for-the-badge)
-![Lehrpfade](https://img.shields.io/badge/Lehrpfade-7-2f5b68?style=for-the-badge)
+![Lehrpfade](https://img.shields.io/badge/Lehrpfade-8-2f5b68?style=for-the-badge)
 ![Offline](https://img.shields.io/badge/PWA-offlinef%C3%A4hig-0e7c86?style=for-the-badge)
 <br>
 ![Lizenz](https://img.shields.io/badge/Lizenz-MIT-4c9a6a?style=flat-square)
@@ -67,7 +67,7 @@ Alles ist Open Source, statisch und datensparsam. Notizen und Lernstand bleiben 
 |---|---|---|
 | ✂️ | **Schnittebenen** | Quer- (axial), Längs- (sagittal) und Frontalschnitt (koronal) mit Schieberegler, Anzeige der Schnitthöhe in cm, Seite umkehrbar. Klicks treffen nur sichtbare Geometrie. |
 | 📏 | **Abstand messen** | Zwei Punkte auf einer Oberfläche antippen → Luftlinie in Zentimetern, maßstabsgetreu zum Referenzmodell. |
-| 🧭 | **Lehrpfade** | 7 geführte Touren mit Erklärtext je Station: *Weg der Nahrung, Weg der Atemluft, Weg des Blutes, Weg des Urins, Rotatorenmanschette, Gehirn & Hirnstamm, Bein & Knie*. |
+| 🧭 | **Lehrpfade** | 8 geführte Touren mit Erklärtext je Station: *Weg der Nahrung, Weg der Atemluft, Weg des Blutes, Weg des Urins, Rotatorenmanschette, Gehirn & Hirnstamm, Bein & Knie, Frau & Mann – was ist anders?* |
 | 🎯 | **Quiz – Benennen** | Eine Struktur wird markiert, du wählst aus vier Antworten. Die Falschantworten kommen möglichst aus demselben Körpersystem. |
 | 🔎 | **Quiz – Finden** | Der Name wird vorgegeben, du tippst die Struktur im 3D-Modell an. Durchsichtige Schichten werden dabei durchschaut. |
 | 🏛️ | **Latein-Modus** | Das Quiz wahlweise mit deutschen Namen oder lateinischer Fachsprache. |
@@ -263,6 +263,7 @@ Die Erklärtexte sind eigene Zusammenfassungen auf Grundlage von OpenStax *Anato
 > **Kein Medizinprodukt.** CORPUS ist ausschließlich für Bildungszwecke bestimmt. Zweckbestimmung, Haftungsausschluss und Datenschutz stehen in [**RECHTLICHES.md**](RECHTLICHES.md).
 
 - Männliches erwachsenes Referenzmodell, keine vollständige Anatomie und kein individueller Körperscan. 934 Teilmodelle sind nicht 934 Organe.
+- Der größte Teil der Anatomie ist bei Frauen und Männern gleich. Wo sich beide unterscheiden (Becken, Harnröhre, Geschlechtsorgane, Kehlkopf, Beckenboden, Brust), erklärt die App das im Kasten **„Frau & Mann“** und im gleichnamigen Lehrpfad. Weibliche Geschlechtsorgane sind als 3D-Modell bisher nicht enthalten.
 - Messwerte stammen aus einem einzelnen Referenzmodell und sind **Näherungen**.
 - Texte, Übersetzungen und Lehrpfade sind KI-unterstützt erstellt und **nicht ärztlich abgenommen**.
 - **Datenschutz:** keine Cookies, kein Tracking. Notizen und Lernstand bleiben lokal im Browser.

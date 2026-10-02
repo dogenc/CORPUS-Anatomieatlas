@@ -88,3 +88,20 @@ urinary:{title:'Beschwerden der Harnwege',text:'Brennen beim Wasserlassen, Blut 
 general:{title:'Beschwerden richtig einordnen',text:'Diese Struktur ist anatomisch dargestellt. Es gibt hier noch keine eigens geprüfte Anleitung für Beschwerden an diesem einzelnen Teil. Für eine Behandlung sind Symptome, Verlauf und Untersuchung entscheidend.',warning:'Bei Lebensgefahr 112. Bei dringenden, nicht lebensbedrohlichen Beschwerden außerhalb der Sprechzeiten hilft in Deutschland die 116117.',source:'first'}
 };
 export function healthFor(m){const p=profile(m);if(p)return health[p[6]];return health[({bones:'injury',muscles:'injury',heart:'chest',vessels:'general',respiratory:'breathing',digestive:'abdominal',nerves:'neuro',urinary:'urinary'})[m.system]||'general'];}
+// Unterschiede zwischen weiblicher und männlicher Anatomie an Stellen, die das (männliche) Referenzmodell zeigt.
+// Jede Aussage ist mit dem verlinkten OpenStax-Kapitel abgeglichen.
+Object.assign(sources,{urineTransport:[base+'25-2-gross-anatomy-of-urine-transport','OpenStax · Harnleiter, Blase und Harnröhre'],female:[base+'27-2-anatomy-and-physiology-of-the-ovarian-reproductive-system','OpenStax · Weibliche Geschlechtsorgane'],sexDev:[base+'27-3-development-of-the-male-and-female-reproductive-systems','OpenStax · Entwicklung der Geschlechtsorgane']});
+const sexNotes=[
+ [/\bhip bone\b/,'Das Hüftbein ist der Knochen, an dem sich weibliches und männliches Skelett am sichersten unterscheiden lassen. Das weibliche Becken ist an die Geburt angepasst: breiter, mit größerem Schambogenwinkel (über 80° statt unter 70°), rundlich-ovalem Beckeneingang und weiterer, flacherer Beckenhöhle. Männliche Beckenknochen sind meist dicker und schwerer.','pelvis'],
+ [/^sacrum$/,'Bei Frauen ist das Kreuzbein meist breiter, kürzer und weniger gekrümmt; sein oberer Vorsprung ragt weniger in das Becken. Dadurch ist der weibliche Beckeneingang runder.','pelvis'],
+ [/^urethra$/,'Die Harnröhre ist das einzige Organ der Harnwege mit deutlichem Unterschied: bei Frauen etwa 4 cm, bei Männern im Mittel etwa 20 cm lang. Die kurze weibliche Harnröhre gilt als wichtigster Grund, warum Harnwegsinfekte bei Frauen häufiger sind. Beim Mann verläuft sie durch Prostata und Penis.','urineTransport'],
+ [/^urinary bladder$|\bureter\b|\bkidney\b/,'Nieren, Harnleiter und Harnblase sind bei Frauen und Männern gleich aufgebaut. Nur die Harnröhre unterscheidet sich deutlich.','urineTransport'],
+ [/^prostate$/,'Die Prostata gibt es nur beim Mann. Sie liegt direkt unter der Harnblase und umschließt den Anfang der Harnröhre.','urineTransport'],
+ [/\btestis\b/,'Hoden und Eierstöcke sind die Keimdrüsen (Gonaden) und entstehen aus derselben Anlage im Embryo. Die Eierstöcke liegen in der Beckenhöhle und bilden Eizellen. Sie sind im Modell nicht enthalten.','female'],
+ [/epididymis|deferent duct|seminal vesicle/,'Diese Strukturen entstehen im Embryo aus dem Wolff-Gang. Ohne Testosteron bildet er sich zurück, und aus dem Müller-Gang entwickelt sich stattdessen das innere weibliche Genitale mit Eileitern und Gebärmutter.','sexDev'],
+ [/glans penis|corpus cavernosum|corpus spongiosum/,'Eichel des Penis und Klitoris entstehen aus denselben embryonalen Zellen: unter Testosteron die Eichel des Penis, ohne Testosteron die Klitoris.','sexDev'],
+ [/thyroid cartilage/,'Der Schildknorpel bildet den „Adamsapfel“, der bei Männern meist stärker hervortritt. In der Pubertät lässt Testosteron den Kehlkopf wachsen und die Stimmlippen länger und dicker werden – die Stimme wird tiefer.','sexDev'],
+ [/pubococcygeus|puborectalis|iliococcygeus|\bcoccygeus\b|levator ani/,'Der Beckenboden trägt die Beckenorgane. Bei beiden Geschlechtern ziehen Analkanal und Harnröhre hindurch, bei Frauen zusätzlich die Scheide.','trunk'],
+ [/pectoralis major/,'Bei Frauen liegt vor der Brustmuskulatur die Brustdrüse. Brustdrüsen sind umgewandelte Schweißdrüsen; die Milch gelangt über 15 bis 20 Milchgänge zur Brustwarze. Im Modell ist keine Brustdrüse enthalten.','female']
+];
+export function sexNote(m){const n=sexNotes.find(([re])=>re.test(m.en));return n?{text:n[1],source:n[2]}:null}

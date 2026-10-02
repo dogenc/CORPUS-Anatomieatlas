@@ -122,7 +122,18 @@ const TOURS=[
   ['right patella','Die Kniescheibe ist das größte Sesambein. Sie verlängert den Hebelarm des Quadrizeps.'],
   ['right tibia','Das Schienbein trägt den Großteil des Körpergewichts zwischen Knie und Sprunggelenk.'],
   ['right calcaneal tendon','Die Achillessehne ist die kräftigste Sehne des Körpers und überträgt die Kraft der Wadenmuskeln auf die Ferse.'],
-  ['right calcaneus','Das Fersenbein ist der größte Fußwurzelknochen und Ansatz der Achillessehne.']]}
+  ['right calcaneus','Das Fersenbein ist der größte Fußwurzelknochen und Ansatz der Achillessehne.']]},
+ {id:'mannfrau',title:'Frau & Mann – was ist anders?',sub:'Becken, Harnröhre, Geschlechtsorgane, Kehlkopf',steps:[
+  ['right hip bone','Das Modell zeigt einen Mann – doch der größte Teil der Anatomie ist bei Frauen gleich. Am deutlichsten unterscheidet sich das Becken: Bei Frauen ist es breiter, der Schambogenwinkel größer (über 80° statt unter 70°) und der Beckeneingang runder – eine Anpassung an die Geburt.'],
+  ['sacrum','Auch das Kreuzbein ist bei Frauen meist breiter, kürzer und weniger gekrümmt. So bleibt der Geburtskanal weiter.'],
+  ['urethra','Nieren, Harnleiter und Blase sind gleich gebaut – nur die Harnröhre nicht: bei Frauen etwa 4 cm, bei Männern etwa 20 cm. Deshalb sind Harnwegsinfekte bei Frauen häufiger.'],
+  ['prostate','Die Prostata gibt es nur beim Mann. Sie liegt unter der Blase und umschließt den Anfang der Harnröhre.'],
+  ['right testis','Hoden und Eierstöcke sind die Keimdrüsen. Sie entstehen aus derselben Anlage im Embryo. Die Eierstöcke liegen in der Beckenhöhle und bilden Eizellen – im Modell fehlen sie.'],
+  ['right deferent duct','Samenleiter und Samenbläschen entstehen aus dem Wolff-Gang. Bei Frauen entwickelt sich stattdessen aus dem Müller-Gang das innere Genitale: Eileiter, Gebärmutter und oberer Teil der Scheide.'],
+  ['glans penis','Eichel des Penis und Klitoris haben denselben Ursprung: Unter Testosteron entsteht die Eichel des Penis, ohne Testosteron die Klitoris.'],
+  ['right pubococcygeus','Der Beckenboden trägt die Beckenorgane. Bei beiden Geschlechtern ziehen Analkanal und Harnröhre hindurch, bei Frauen zusätzlich die Scheide.'],
+  ['thyroid cartilage','Der „Adamsapfel“ tritt bei Männern meist stärker hervor: In der Pubertät lässt Testosteron den Kehlkopf wachsen und die Stimmlippen länger und dicker werden.'],
+  ['sternocostal part of right pectoralis major','Bei Frauen liegt vor der Brustmuskulatur die Brustdrüse – umgewandelte Schweißdrüsen mit 15 bis 20 Milchgängen. Auch sie ist im Modell nicht enthalten.']]}
 ];
 const tour={cur:null,i:0};
 function tourSteps(t){return t.steps.map(([en,text])=>[api.catalog?.meshes.find(m=>m.en===en),text]).filter(s=>s[0]?.mesh)}
