@@ -1,0 +1,6 @@
+BodyParts3D, Copyright © The Database Center for Life Science licensed by CC Attribution-Share Alike 2.1 Japan.
+
+Original data and required credit: https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/README_e.html
+License: https://creativecommons.org/licenses/by-sa/2.1/jp/
+
+These derived 3D mesh files are distributed under the same CC BY-SA 2.1 Japan license. Changes: coordinate transform (x,z,-y), spatial vertex clustering (0.8–1.35 mm), binary packing, gzip compression, and display colors.

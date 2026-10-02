@@ -1,0 +1,10 @@
+# Abhängigkeiten und Build-Ergebnisse
+node_modules/
+desktop/release/
+# Betriebssystem / Editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.log

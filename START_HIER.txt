@@ -1,0 +1,56 @@
+CORPUS – ANATOMIEATLAS v1
+========================
+
+Vollständiger Stand der bereitgestellten Webanwendung, inklusive aller
+934 echten BodyParts3D-Teilmodelle, Quellcode und lokal mitgelieferter
+Three.js-Bibliothek. Keine API-Schlüssel und keine Administratorrechte nötig.
+
+AUF DEM HANDY
+Am iPhone in Safari: Teilen → Zum Home-Bildschirm.
+
+LOKAL AUF WINDOWS
+1. ZIP vollständig entpacken.
+2. Voraussetzung: Python 3 ist bereits installiert und über „py“ erreichbar.
+3. START_WINDOWS.cmd doppelklicken. Der Browser öffnet sich automatisch.
+4. Das Konsolenfenster während der Nutzung offen lassen. Strg+C beendet
+   den lokalen Server. Er ist nur auf diesem Computer erreichbar.
+   Falls „py“ fehlt, aber „python“ funktioniert: python start.py ausführen.
+
+LOKAL AUF LINUX / macOS
+Im entpackten CORPUS-Ordner ausführen:
+    python3 start.py
+Benötigt vorhandenes Python 3; keine zusätzlichen Python-Pakete.
+
+WICHTIG
+index.html nicht direkt per Doppelklick öffnen. JavaScript-Module und
+3D-Dateien benötigen einen HTTP-Server. Wenn kein Python vorhanden ist,
+kannst du die Online-Version verwenden oder den Inhalt von „dist“ über
+einen vorhandenen statischen Webserver bereitstellen.
+Für eigenes Hosting: „dist“ als Website-Wurzel verwenden, nicht als
+Unterverzeichnis. Für Offline-Speicherung außerhalb von localhost ist
+HTTPS erforderlich.
+
+OFFLINE
+Beim lokalen Start werden alle Anwendungs- und 3D-Dateien vom Computer
+bereitgestellt. Externe Quellenlinks benötigen Internet. Die Schaltfläche
+„Für offline speichern“ verwendet den Browserspeicher; dieser kann vom
+Browser bei Platzmangel gelöscht werden.
+
+UMFANG UND GRENZEN
+- Männliches erwachsenes Referenzmodell, keine vollständige menschliche
+  Anatomie und kein individueller Körperscan.
+- 934 deutsche Bezeichnungen und lateinische Grundbegriffe.
+- Detail-/Gruppenbeschreibungen decken 268 Modelle ab. Die übrigen zeigen
+  ausdrücklich gekennzeichnete Erklärungen des jeweiligen Körpersystems.
+- Medizinische Texte und Übersetzungen sind nicht ärztlich abgenommen.
+  Keine individuelle Diagnose oder Therapie.
+- Browser benötigt WebGL2, JavaScript-Module/Importmaps und
+  DecompressionStream. Ein aktueller Browser ist empfehlenswert.
+
+LIZENZEN
+3D-Daten: dist/assets/LICENSE.txt (BodyParts3D, CC BY-SA 2.1 Japan).
+Three.js: dist/vendor/LICENSE (MIT).
+Daten wurden für mobile Darstellung vereinfacht und eingefärbt.
+Die ursprünglichen OBJ-Dateien sind nicht enthalten; das Paket enthält
+alle abgeleiteten, von dieser Anwendung verwendeten 3D-Daten.
+Weitere technische Informationen: README.md.
