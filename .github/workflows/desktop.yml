@@ -84,7 +84,7 @@ jobs:
             - **Windows:** „Der Computer wurde durch Windows geschützt“ → *Weitere Informationen* → *Trotzdem ausführen*
             - **macOS:** Programm in „Programme“ ziehen, dann *Rechtsklick → Öffnen* (oder Systemeinstellungen → Datenschutz & Sicherheit → *Dennoch öffnen*)
 
-            Lernwerkzeug, kein Medizinprodukt – siehe RECHTLICHES.md. Code: MIT · 3D-Daten: BodyParts3D, CC BY-SA 2.1 JP.
+            Lernwerkzeug, kein Medizinprodukt – siehe RECHTLICHES.md. Code: MIT · 3D-Daten: BodyParts3D, CC BY-SA 2.1 JP · Weibliche Modelle: Human Reference Atlas (HuBMAP), CC BY 4.0.
 
       # Ersetzt eine ältere Version: Release und zugehörigen Tag löschen.
       - name: Älteres Release entfernen
