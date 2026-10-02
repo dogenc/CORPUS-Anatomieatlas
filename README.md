@@ -189,13 +189,14 @@ npm run dist:mac     # auf macOS   → desktop/release/*.dmg
 
 Der Ordner `dist` ist die fertige Website, ein Build-Schritt ist nicht nötig.
 
-**Cloudflare Pages (empfohlen):**
-1. Cloudflare-Dashboard → **Workers & Pages** → *Create* → **Pages** → *Connect to Git* → dieses Repository
-2. **Build command:** leer · **Build output directory:** `dist`
-3. **Custom domains** → eigene Domain eintragen
-4. Optional mit **Cloudflare Access** den Zugriff beschränken
+**Cloudflare Pages (empfohlen, kostenlos):**
+1. [dash.cloudflare.com](https://dash.cloudflare.com) → **Workers & Pages** → **Create application** → Reiter **Pages** → **Import an existing Git repository**
+2. GitHub verbinden und dieses Repository auswählen → **Begin setup**
+3. **Framework preset:** *None* · **Build command:** leer lassen · **Build output directory:** `dist` · **Production branch:** `main`
+4. **Save and Deploy** → nach etwa einer Minute ist CORPUS unter `https://<projektname>.pages.dev` erreichbar
+5. Optional: **Custom domains** → eigene Domain eintragen · **Cloudflare Access** → Zugriff auf bestimmte E-Mail-Adressen beschränken
 
-Jeder Push auf `main` wird automatisch veröffentlicht. Jeder andere statische Webserver geht ebenso, solange `dist` die Wurzel ist. Für Offline-Modus und Teilen-Funktionen ist HTTPS nötig.
+Jeder Push auf `main` wird danach automatisch veröffentlicht. Sicherheits-Header (Content-Security-Policy u. a.) und Caching sind in [`dist/_headers`](dist/_headers) festgelegt und werden von Cloudflare automatisch angewendet. Jeder andere statische Webserver funktioniert ebenso, solange `dist` die Wurzel ist. Für Offline-Modus und Teilen-Funktionen ist HTTPS nötig.
 
 ---
 
