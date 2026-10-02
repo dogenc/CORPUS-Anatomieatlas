@@ -3,7 +3,7 @@
 In letzter Zeit haben viele so eine Anatomie-App nachgebaut. Ich wollte auch eine – nur mit mehr Funktionen. 👇
 
 ✂️ Schnittebenen wie im CT (quer, längs, frontal)
-🧭 7 geführte Lehrpfade – z. B. der Weg des Blutes durchs Herz
+🧭 8 geführte Lehrpfade – z. B. der Weg des Blutes durchs Herz oder „Frau & Mann – was ist anders?“
 🎯 Quiz mit Lernkurve: Benennen, Finden, auch auf Latein
 📏 Abstände messen & 📝 eigene Notizen zu jeder Struktur
 💻 Im Browser, als Windows- & Mac-App – komplett offline
