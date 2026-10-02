@@ -8,3 +8,6 @@ desktop.ini
 .vscode/
 .idea/
 *.log
+
+# Zwischenspeicher für Quell-Modelle (scripts/prepare_female.mjs)
+scripts/.cache-hra/

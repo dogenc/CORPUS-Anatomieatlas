@@ -34,3 +34,9 @@ body.measure-mode #scene canvas{cursor:crosshair}
 #note{width:100%;border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit;font-size:14px;line-height:1.5;resize:vertical;color:var(--ink);background:#fbfcfc}#note:focus{outline:2px solid #5496a8;outline-offset:1px}
 @media(max-width:850px){.tour .tour-text{font-size:13px}.tour-name{font-size:16px}}
 .sex-note{background:#f4f1f7;border-left:3px solid #9b7fb5;border-radius:6px;padding:4px 14px 2px;margin:10px 0 6px}.sex-note h3{color:#6b4f86;margin-top:12px!important}.sex-note .source-link{border-bottom:0;padding-top:0}
+.sex-label{position:absolute;transform:translate(-50%,-100%);z-index:3;pointer-events:none;background:#ffffffee;border:1px solid #e3dce9;border-radius:20px;padding:6px 13px;font-size:13px;font-weight:650;color:#6b4f86;white-space:nowrap;box-shadow:0 6px 18px #2231371a}.sex-label.male{color:#345966;border-color:#d7e2e6}
+#sex-labels[hidden]{display:none}
+body.female-mode .detail-tabs,body.female-mode .explode-control{display:none}
+.female-open{border-color:#d9cfe3;color:#6b4f86;font-weight:600}.female-link{margin:4px 0 12px;font-size:12px;color:#6b4f86;border-color:#ddd2e6;width:100%}
+.female-back{margin-top:16px;width:100%}.female-exit{margin-top:16px;width:100%;justify-content:center}
+.tour-btn .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px;vertical-align:1px}

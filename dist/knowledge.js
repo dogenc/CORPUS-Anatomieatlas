@@ -104,4 +104,6 @@ const sexNotes=[
  [/pubococcygeus|puborectalis|iliococcygeus|\bcoccygeus\b|levator ani/,'Der Beckenboden trägt die Beckenorgane. Bei beiden Geschlechtern ziehen Analkanal und Harnröhre hindurch, bei Frauen zusätzlich die Scheide.','trunk'],
  [/pectoralis major/,'Bei Frauen liegt vor der Brustmuskulatur die Brustdrüse. Brustdrüsen sind umgewandelte Schweißdrüsen; die Milch gelangt über 15 bis 20 Milchgänge zur Brustwarze. Im Modell ist keine Brustdrüse enthalten.','female']
 ];
-export function sexNote(m){const n=sexNotes.find(([re])=>re.test(m.en));return n?{text:n[1],source:n[2]}:null}
+// Strukturen, deren weibliches Gegenstück im Vergleichsmodus als 3D-Modell vorhanden ist.
+const femaleModel=/hip bone|^sacrum$|testis|epididymis|deferent duct|seminal vesicle|glans penis|corpus cavernosum|corpus spongiosum|pectoralis major|^prostate$/;
+export function sexNote(m){const n=sexNotes.find(([re])=>re.test(m.en));return n?{text:n[1],source:n[2],female:femaleModel.test(m.en)}:null}

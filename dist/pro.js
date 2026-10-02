@@ -22,6 +22,7 @@ function updateClip(){
  }
  applyClip();
 }
+export const clipPlanes=()=>clip.planes;
 export function applyClip(){for(const m of api.meshes)m.material.clippingPlanes=clip.planes;api.redraw()}
 // A click only counts on geometry that is not cut away.
 export const keepHit=h=>!clip.planes.length||clip.plane.distanceToPoint(h.point)>=-1e-4;

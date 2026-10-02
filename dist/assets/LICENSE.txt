@@ -4,3 +4,9 @@ Original data and required credit: https://dbarchive.biosciencedbc.jp/data/bodyp
 License: https://creativecommons.org/licenses/by-sa/2.1/jp/
 
 These derived 3D mesh files are distributed under the same CC BY-SA 2.1 Japan license. Changes: coordinate transform (x,z,-y), spatial vertex clustering (0.8–1.35 mm), binary packing, gzip compression, and display colors.
+
+---
+female.json / female.bin.gz: female 3D reference organs (pelvis, uterus, ovaries, uterine tubes, mammary glands) from the Human Reference Atlas – 3D Reference Organs, Human BioMolecular Atlas Program (HuBMAP), created from the Visible Human Female dataset of the US National Library of Medicine.
+Source: https://humanatlas.io/3d-reference-library
+License: Creative Commons Attribution 4.0 International (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/
+Changes: part selection, alignment to the atlas pelvis, mesh simplification of the mammary models (vertex clustering), binary packing, gzip compression, display colors.

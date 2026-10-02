@@ -30,10 +30,13 @@ CORPUS (e.g. dist/*.js, dist/*.html, dist/*.css, scripts/, start.py, docs/).
 It does NOT cover the following third-party components, which remain under
 their own licenses (see NOTICE.md):
 
-  * dist/assets/*  – 3D mesh data derived from BodyParts3D,
+  * dist/assets/*  – 3D mesh data derived from BodyParts3D (except female.*),
                      (c) The Database Center for Life Science,
                      licensed under CC BY-SA 2.1 Japan
                      (dist/assets/LICENSE.txt)
+  * dist/assets/female.*  – female 3D reference organs from the Human
+                     Reference Atlas (HuBMAP, Visible Human Female),
+                     licensed under CC BY 4.0
   * dist/vendor/*  – three.js, (c) three.js authors, MIT License
                      (dist/vendor/LICENSE)
 

@@ -72,6 +72,7 @@ Alles ist Open Source, statisch und datensparsam. Notizen und Lernstand bleiben 
 | 🔎 | **Quiz – Finden** | Der Name wird vorgegeben, du tippst die Struktur im 3D-Modell an. Durchsichtige Schichten werden dabei durchschaut. |
 | 🏛️ | **Latein-Modus** | Das Quiz wahlweise mit deutschen Namen oder lateinischer Fachsprache. |
 | 📈 | **Lernstand (Leitner)** | Falsch beantwortete Strukturen kommen häufiger, gemeisterte seltener. Fortschritt pro Struktur sichtbar. |
+| ♀️ | **Weibliche Anatomie** | Eigener Vergleichsmodus mit 3D-Modellen einer Frau: Becken, Gebärmutter, Eierstöcke, Eileiter und Brust – auf Wunsch direkt neben dem männlichen Becken. Jede Struktur mit Name, Latein, Erklärung und Unterschied zum Mann. |
 | 📝 | **Notizen** | Eigene Merksätze und Klinikbezug zu jeder Struktur. Werden automatisch gespeichert, lassen sich als JSON exportieren und importieren. |
 | 🔗 | **Ansicht als Link** | Speichert Kamera, eingeblendete Systeme, Transparenz und Schnittebene in einem Link – ideal für Vorlesungsfolien. |
 
@@ -209,6 +210,7 @@ CORPUS-Anatomieatlas/
 │   ├── style.css              Gestaltung
 │   ├── app.js                 3D-Ansicht, Auswahl, Suche, Quiz, Teilen, Bildexport
 │   ├── pro.js                 Schnittebenen, Messen, Lehrpfade, Notizen, Ansicht-Links
+│   ├── female.js              Vergleichsmodus „Weibliche Anatomie“
 │   ├── names.js               deutsche & lateinische Bezeichnungen
 │   ├── knowledge.js           Erklärtexte, Beschwerde-Hinweise, Quellen
 │   ├── sw.js                  Service Worker (Offline)
@@ -217,7 +219,8 @@ CORPUS-Anatomieatlas/
 │   └── assets/                catalog.json + 11 gepackte 3D-Pakete (gzip)
 ├── desktop/                   Electron-Hülle für Windows/macOS (main.js, package.json, Icon)
 ├── .github/workflows/         automatischer Desktop-Build & Release
-├── scripts/prepare_meshes.py  OBJ → Binärpakete
+├── scripts/prepare_meshes.py  OBJ → Binärpakete (BodyParts3D)
+├── scripts/prepare_female.mjs weibliche Modelle (Human Reference Atlas) → Binärpaket
 ├── docs/                      Banner & Screenshots
 ├── LICENSE · NOTICE.md · RECHTLICHES.md   Lizenz, Drittkomponenten, Haftung & Datenschutz
 └── start.py · START_WINDOWS.cmd · START_HIER.txt
@@ -243,12 +246,13 @@ Am einfachsten: Issue öffnen oder Pull Request stellen. Bitte medizinische Inha
 
 ## 📜 Lizenz
 
-CORPUS ist **Open Source**. Es gelten drei Lizenzen nebeneinander:
+CORPUS ist **Open Source**. Es gelten vier Lizenzen nebeneinander:
 
 | Bestandteil | Herkunft | Lizenz |
 |---|---|---|
 | **Code & eigene Texte** | CORPUS (dieses Repository) | [**MIT**](LICENSE) – frei nutzbar, auch kommerziell. Copyright- und Lizenzhinweis müssen erhalten bleiben. |
 | 3D-Modelle | [BodyParts3D 3.0](https://dbarchive.biosciencedbc.jp/data/bodyparts3d/20110915/README_e.html), © The Database Center for Life Science | [CC BY-SA 2.1 Japan](https://creativecommons.org/licenses/by-sa/2.1/jp/), siehe [`dist/assets/LICENSE.txt`](dist/assets/LICENSE.txt) |
+| Weibliche 3D-Modelle | [Human Reference Atlas](https://humanatlas.io/3d-reference-library) (HuBMAP), Visible Human Female | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | 3D-Bibliothek | [Three.js](https://threejs.org) 0.180.0 | MIT, siehe [`dist/vendor/LICENSE`](dist/vendor/LICENSE) |
 
 Die MIT-Lizenz gilt **nicht** für die 3D-Daten. Wer sie weitergibt, muss BodyParts3D nennen und Bearbeitungen wieder unter CC BY-SA veröffentlichen. Alle Einzelheiten zu Drittkomponenten und Textquellen stehen in [**NOTICE.md**](NOTICE.md).
@@ -263,7 +267,7 @@ Die Erklärtexte sind eigene Zusammenfassungen auf Grundlage von OpenStax *Anato
 > **Kein Medizinprodukt.** CORPUS ist ausschließlich für Bildungszwecke bestimmt. Zweckbestimmung, Haftungsausschluss und Datenschutz stehen in [**RECHTLICHES.md**](RECHTLICHES.md).
 
 - Männliches erwachsenes Referenzmodell, keine vollständige Anatomie und kein individueller Körperscan. 934 Teilmodelle sind nicht 934 Organe.
-- Der größte Teil der Anatomie ist bei Frauen und Männern gleich. Wo sich beide unterscheiden (Becken, Harnröhre, Geschlechtsorgane, Kehlkopf, Beckenboden, Brust), erklärt die App das im Kasten **„Frau & Mann“** und im gleichnamigen Lehrpfad. Weibliche Geschlechtsorgane sind als 3D-Modell bisher nicht enthalten.
+- Der größte Teil der Anatomie ist bei Frauen und Männern gleich. Wo sich beide unterscheiden (Becken, Harnröhre, Geschlechtsorgane, Kehlkopf, Beckenboden, Brust), erklärt die App das im Kasten **„Frau & Mann“** und im gleichnamigen Lehrpfad. Becken, Gebärmutter, Eierstöcke, Eileiter und Brust einer Frau zeigt der **Vergleichsmodus „Weibliche Anatomie“** (eigener Datensatz; zwei verschiedene Körper, daher kein exakter Größenvergleich). Scheide und äußeres Genitale sind als 3D-Modell nicht enthalten.
 - Messwerte stammen aus einem einzelnen Referenzmodell und sind **Näherungen**.
 - Texte, Übersetzungen und Lehrpfade sind KI-unterstützt erstellt und **nicht ärztlich abgenommen**.
 - **Datenschutz:** keine Cookies, kein Tracking. Notizen und Lernstand bleiben lokal im Browser.

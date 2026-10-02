@@ -21,7 +21,19 @@ Die Anwendung zeigt diese Angaben unter „Quellen & Hinweise“ und in jedem ge
 
 > Die MIT-Lizenz des CORPUS-Codes gilt **nicht** für diese Daten. Die Share-Alike-Pflicht betrifft nur die 3D-Daten und deren Bearbeitungen, nicht den Programmcode, der sie anzeigt.
 
-## 2. three.js – 3D-Bibliothek
+## 2. Human Reference Atlas – weibliche 3D-Modelle
+
+| | |
+|---|---|
+| **Dateien** | `dist/assets/female.json`, `dist/assets/female.bin.gz` |
+| **Urheber** | Human BioMolecular Atlas Program (HuBMAP), Human Reference Atlas – 3D Reference Organs; erstellt aus dem *Visible Human Female*-Datensatz der US National Library of Medicine |
+| **Quelle** | <https://humanatlas.io/3d-reference-library> · Modelle: Becken (v1.3), Gebärmutter (v1.2), Eierstöcke (v1.3), Eileiter (v1.2), Brustdrüsen (v1.1) |
+| **Lizenz** | [Creative Commons Namensnennung 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) |
+| **Änderungen** | Auswahl der Teile, Ausrichtung am Becken des Atlas, Vereinfachung der Brust-Modelle (Vertex-Clustering), binäres Packen, gzip, Anzeigefarben |
+
+Die App nennt die Quelle im Vergleichsmodus und in jedem dort gespeicherten Bild. `scripts/prepare_female.mjs` erzeugt die Dateien reproduzierbar aus den Originalen.
+
+## 3. three.js – 3D-Bibliothek
 
 | | |
 |---|---|
@@ -31,11 +43,11 @@ Die Anwendung zeigt diese Angaben unter „Quellen & Hinweise“ und in jedem ge
 | **Quelle** | <https://github.com/mrdoob/three.js> |
 | **Lizenz** | MIT, siehe [`dist/vendor/LICENSE`](dist/vendor/LICENSE) |
 
-## 3. Electron (nur Desktop-Apps)
+## 4. Electron (nur Desktop-Apps)
 
 Die Desktop-Versionen für Windows und macOS enthalten [Electron](https://www.electronjs.org) (MIT-Lizenz) mit Chromium. Deren Lizenzhinweise liegen den Programmen bei (`LICENSE.electron.txt`, `LICENSES.chromium.html`).
 
-## 4. Inhaltliche Quellen der Texte
+## 5. Inhaltliche Quellen der Texte
 
 Die Erklärtexte, Übersetzungen und Lehrpfade sind **eigene, frei formulierte Zusammenfassungen**. Es wurden keine Texte wörtlich übernommen. Als fachliche Grundlage dienten unter anderem die folgenden Quellen. Jeder Eintrag in der App verlinkt seine Quelle.
 

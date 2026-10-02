@@ -1,6 +1,6 @@
 // CORPUS Service Worker: Offline-Speicherung auf Anforderung ("Für offline speichern").
-const CACHE='corpus-v2';
-const SHELL=['/','/index.html','/style.css','/app.js','/names.js','/pro.js','/knowledge.js','/icon.svg','/manifest.webmanifest','/vendor/three.module.js','/vendor/three.core.js','/vendor/OrbitControls.js','/assets/catalog.json'];
+const CACHE='corpus-v3';
+const SHELL=['/','/index.html','/style.css','/app.js','/names.js','/pro.js','/female.js','/assets/female.json','/assets/female.bin.gz','/knowledge.js','/icon.svg','/manifest.webmanifest','/vendor/three.module.js','/vendor/three.core.js','/vendor/OrbitControls.js','/assets/catalog.json'];
 self.addEventListener('install',()=>self.skipWaiting());
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 // Netzwerk zuerst, damit Updates ankommen; gespeicherte Kopie nur ohne Verbindung.
