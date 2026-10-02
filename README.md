@@ -18,12 +18,14 @@ Läuft komplett im Browser. Keine Installation, kein Konto, kein Tracking.
 ![Modelle](https://img.shields.io/badge/3D--Modelle-934-2f5b68?style=for-the-badge)
 ![Systeme](https://img.shields.io/badge/K%C3%B6rpersysteme-13-2f5b68?style=for-the-badge)
 ![Lehrpfade](https://img.shields.io/badge/Lehrpfade-8-2f5b68?style=for-the-badge)
+![Frau & Mann](https://img.shields.io/badge/%E2%99%80%20%E2%99%82-Frau%20%26%20Mann-8a6aa6?style=for-the-badge)
 ![Offline](https://img.shields.io/badge/PWA-offlinef%C3%A4hig-0e7c86?style=for-the-badge)
 <br>
 ![Lizenz](https://img.shields.io/badge/Lizenz-MIT-4c9a6a?style=flat-square)
 ![Three.js](https://img.shields.io/badge/Three.js-0.180-000000?style=flat-square&logo=threedotjs)
 ![Kein Build](https://img.shields.io/badge/Build-nicht%20n%C3%B6tig-4c9a6a?style=flat-square)
 ![Daten](https://img.shields.io/badge/3D--Daten-CC%20BY--SA%202.1%20JP-ef9421?style=flat-square)
+![Weibliche Modelle](https://img.shields.io/badge/weibliche%20Modelle-CC%20BY%204.0-ef9421?style=flat-square)
 ![Sprache](https://img.shields.io/badge/Sprache-Deutsch%20%C2%B7%20Latein-555?style=flat-square)
 
 [**Funktionen**](#-funktionen) · [**Screenshots**](#-screenshots) · [**Schnellstart**](#-schnellstart) · [**Hosting**](#-veröffentlichen) · [**Mitmachen**](#-mitmachen) · [**Lizenz**](#-lizenz)
@@ -42,6 +44,7 @@ Darum ist CORPUS mehr als ein drehbares Modell. Es ist ein **Lern- und Lehrwerkz
 - **Schnittebenen** wie im CT
 - **Abstandsmessung** in Zentimetern
 - **geführte Lehrpfade** durch Kreislauf, Verdauung und Gehirn
+- **weibliche Anatomie** in 3D – Becken, Gebärmutter, Eierstöcke, Eileiter und Brust im direkten Vergleich zum Mann
 - ein **Quiz mit Lernstand**, auf Deutsch oder Latein
 - eigene **Notizen** zu jeder Struktur
 - **Links**, die eine komplette Ansicht für die Vorlesung festhalten
@@ -121,6 +124,10 @@ Alles ist Open Source, statisch und datensparsam. Notizen und Lernstand bleiben 
 <tr>
 <td><img src="docs/screenshots/04-messen.png" alt="Messen"><br><sub><b>Messen</b> – Abstand in Zentimetern</sub></td>
 <td><img src="docs/screenshots/08-notizen.png" alt="Notizen"><br><sub><b>Notizen</b> – Merksätze und Lernstand je Struktur</sub></td>
+</tr>
+<tr>
+<td><img src="docs/screenshots/10-weiblich-vergleich.png" alt="Weibliche Anatomie"><br><sub><b>Weibliche Anatomie</b> – weibliches und männliches Becken im Vergleich</sub></td>
+<td><img src="docs/screenshots/11-weiblich-gebaermutter.png" alt="Gebärmutter"><br><sub><b>Gebärmutter & Eileiter</b> – jede Struktur mit Name, Latein und Erklärung</sub></td>
 </tr>
 <tr>
 <td><img src="docs/screenshots/09-entfalten.png" alt="Entfalten"><br><sub><b>Anatomie entfalten</b> – nach Körpersystem gruppiert</sub></td>

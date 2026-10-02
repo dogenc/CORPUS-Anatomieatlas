@@ -8,7 +8,7 @@
   <rect width="1280" height="360" rx="22" fill="url(#grid)"/>
   <rect width="1280" height="360" rx="22" fill="url(#glow)"/>
   <!-- EKG-Linie -->
-  <path d="M0 322 H760 l14 -24 l14 40 l18 -84 l16 96 l14 -28 H1280" fill="none" stroke="#7fd1dc" stroke-opacity=".55" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M0 322 H880 l14 -24 l14 40 l18 -84 l16 96 l14 -28 H1280" fill="none" stroke="#7fd1dc" stroke-opacity=".55" stroke-width="2.5" stroke-linejoin="round"/>
   <!-- schematische Wirbelsäule / Rippen -->
   <g transform="translate(1010 50)" fill="none" stroke="#cfe9ee" stroke-opacity=".38" stroke-width="2.4" stroke-linecap="round">
     <circle cx="70" cy="22" r="20"/>
@@ -32,6 +32,7 @@
     <g transform="translate(74 262)"><rect width="150" height="34" rx="17" fill="#ffffff" fill-opacity=".12"/><text x="75" y="22" text-anchor="middle">934 3D-Modelle</text></g>
     <g transform="translate(236 262)"><rect width="168" height="34" rx="17" fill="#ffffff" fill-opacity=".12"/><text x="84" y="22" text-anchor="middle">Quiz &amp; Lehrpfade</text></g>
     <g transform="translate(416 262)"><rect width="150" height="34" rx="17" fill="#ffffff" fill-opacity=".12"/><text x="75" y="22" text-anchor="middle">Schnittebenen</text></g>
-    <g transform="translate(578 262)"><rect width="110" height="34" rx="17" fill="#ffffff" fill-opacity=".12"/><text x="55" y="22" text-anchor="middle">Offline</text></g>
+    <g transform="translate(578 262)"><rect width="140" height="34" rx="17" fill="#ffffff" fill-opacity=".12"/><text x="70" y="22" text-anchor="middle">♀ Frau &amp; Mann</text></g>
+    <g transform="translate(730 262)"><rect width="110" height="34" rx="17" fill="#ffffff" fill-opacity=".12"/><text x="55" y="22" text-anchor="middle">Offline</text></g>
   </g>
 </svg>
